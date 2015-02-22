@@ -8,20 +8,27 @@ No deps required.
 - for use this library, you need add Css to $.css or el.style. If you add in css file, el.style return matrice element.
 
 - to use :
-```
+```js
 new Transform(obj);
 ```
 
 - input avalaible :
-```
-var obj = document.getElementById('test'); // dom classic
-var obj = $('#test'); // jQuery
-var obj = { translateX: '10px', translateY: 10 }; // object
-var obj = 'transform: translateX(10px) translateY(10px)'; // string
+```js
+// dom classic
+var obj = document.getElementById('test'); 
+
+// jQuery
+var obj = $('#test'); 
+
+// object
+var obj = { translateX: '10px', translateY: 10 }; 
+
+// string
+var obj = 'transform: translateX(10px) translateY(10px)'; 
 ```
 
 - method :
-```
+```js
 var transfo = new Transform({ translateX: 10, rotateZ: 10 });
 
 transfo.get(); // return { translateX: 10, rotateZ: 10 }
