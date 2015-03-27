@@ -33,7 +33,7 @@
         var domObject;
         var convert = false;
 
-            
+        
         if(typeof obj == 'string'){
             convert = true;
         }
@@ -62,7 +62,8 @@
                 }
             }
             
-            convert = true;
+            if( good )
+                convert = true;
         }
         
         // convert style to object
